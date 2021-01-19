@@ -1,0 +1,24 @@
+{% load i18n %}
+{% block html_body %}
+<p><strong>{% blocktrans %}Hi {{ name }}, {% endblocktrans %}</strong></p><br/>
+<p>{% blocktrans %}
+
+     {{message}} .
+
+{% endblocktrans %}</p>
+
+
+<p><strong>{% trans "Thanks and Regards" %}</strong>,</p>
+<p>{% blocktrans %}Admin{% endblocktrans %}</p>
+<p>{% blocktrans %}Ajit & Team{% endblocktrans %}</p>
+<style>
+    p{
+        margin:0;
+        padding:0;
+    }
+    br{
+        margin-bottom:10px;
+        height:10px;
+    }
+</style>
+{% endblock html_body %}

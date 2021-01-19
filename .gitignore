@@ -1,0 +1,7 @@
+*.pyc
+.idea/
+raj/
+app/migrations/*.py
+
+
+
